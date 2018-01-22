@@ -34,6 +34,7 @@ app.use('/', router);
 
 models.db.sync({})
 .then(function () {
+	console.log('db updated');
     // make sure to replace the name below with your express app
 	app.listen(3000, function() {
 	console.log('Listening on port 3000');
