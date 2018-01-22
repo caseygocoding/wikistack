@@ -9,4 +9,6 @@ router.get('/', function(req, res) {
 
 router.use('/wiki', wikiRouter)
 
+router.use('/user', userRouter)
+
 module.exports = router;
